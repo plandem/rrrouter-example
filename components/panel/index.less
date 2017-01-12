@@ -1,0 +1,24 @@
+@panel-prefix-cls: ~"panel";
+
+.@{panel-prefix-cls} {
+  color: #000;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  padding: 16px;
+  margin: 16px;
+
+  h3.@{panel-prefix-cls}-title {
+	border-bottom: 1px dashed #aaa;
+	color: #666;
+	margin-bottom: 16px;
+  }
+
+  &-content {
+
+  }
+
+  & ul, & ol {
+	margin-left: 24px;
+	color: #666;
+  }
+}
