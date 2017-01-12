@@ -18,8 +18,7 @@ export default function configureStore ({ history, location }) {
 	);
 
 	if(location) {
-		//initialize state of 'router' with current location
-		store.dispatch(navigate(location));
+		store.dispatch(navigate(location.replace(/^\/|\/($|\?)/g, '').replace(/#(.+)/g, '')));
 	}
 
 	return store;
