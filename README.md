@@ -5,4 +5,4 @@ $ npm install
 $ npm start
 ```
 
-[Online version](https://rawgit.com/plandem/rrrouter/master/dist/index.html)
+[Online version](https://rawgit.com/plandem/rrrouter-example/master/dist/index.html)
