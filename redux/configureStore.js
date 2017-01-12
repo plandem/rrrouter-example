@@ -19,7 +19,7 @@ export default function configureStore ({ history, location }) {
 
 	if(location) {
 		//initialize state of 'router' with current location
-		store.dispatch(navigate(window.location.href));
+		store.dispatch(navigate(location));
 	}
 
 	return store;
