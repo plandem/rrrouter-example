@@ -18,7 +18,7 @@ export default function configureStore ({ history, location }) {
 	);
 
 	if(location) {
-		store.dispatch(navigate(location.replace(/^\/|\/($|\?)/g, '').replace(/#(.+)/g, '')));
+		store.dispatch(navigate(location));
 	}
 
 	return store;

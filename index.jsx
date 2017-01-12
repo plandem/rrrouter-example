@@ -8,8 +8,7 @@ import configureStore from './redux/configureStore';
 import App from './components/app';
 
 const history = new HashHistory();
-const location = window.location.href;
-// const location = '/';
+const location = '/';
 const store = configureStore({ history, location });
 
 ReactDOM.render(
