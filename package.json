@@ -5,7 +5,8 @@
   },
   "scripts": {
     "start": "dora -p 8001 --plugins proxy,webpack?disableNpmInstall,webpack-hmr",
-    "build": "atool-build"
+    "copy": "ncp index.html ./dist/index.html",
+    "build": "atool-build && npm run copy"
   },
   "dependencies": {
     "antd": "2.6.x",
@@ -23,7 +24,8 @@
     "dora": "0.3.x",
     "dora-plugin-proxy": "0.7.x",
     "dora-plugin-webpack": "0.6.x",
-    "dora-plugin-webpack-hmr": "0.1.x"
+    "dora-plugin-webpack-hmr": "0.1.x",
+    "ncp": "2.0.x"
   },
   "license": "ISC"
 }
